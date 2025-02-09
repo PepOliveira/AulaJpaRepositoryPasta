@@ -42,10 +42,10 @@ git pull origin main
 ```
 ### 📝 Fazer Alterações e Adicionar ao Git
 Após modificar arquivos, adicione as mudanças ao Git:
-
+```
 git add .
 git commit -m "Descrição da alteração realizada"
-
+```
 ### ⬆️ Enviar Alterações para o GitHub (Push)
 Para enviar suas mudanças para o repositório remoto:
 ```
