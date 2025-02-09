@@ -32,7 +32,7 @@ git clone https://github.com/rafaelmoreno29/20251_DesenvolvimentoWeb_N1.git
 
 cd 20251_DesenvolvimentoWeb_N1
 
-### 📝 Trabalhando com o GitHub
+## 📝 Trabalhando com o GitHub
 
 ### 🔄 Atualizar o Repositório Local (Pull)
 Antes de fazer mudanças no código, sempre atualize seu repositório local com as alterações mais recentes:
