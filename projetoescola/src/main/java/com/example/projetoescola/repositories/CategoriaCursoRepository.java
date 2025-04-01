@@ -1,27 +1,18 @@
 package com.example.projetoescola.repositories;
 
-import java.util.List;
+//JpaRepository recebe primeiro a classe ou entidade e o segundo parametro é o tipo de dado da chave primaria da entidade
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Repository;
 
+import org.springframework.data.jpa.repository.JpaRepository;
 import com.example.projetoescola.models.CategoriaCurso;
 
-import jakarta.persistence.EntityManager;
-import jakarta.transaction.Transactional;
 
-@Repository
-public class CategoriaCursoRepository {
-    @Autowired
-    private EntityManager entityManager;
+public interface CategoriaCursoRepository extends JpaRepository<CategoriaCurso, Integer> { 
+    //dentro do <> voce coloca as coisas da classe -> como no CategoriaCurso eu tenho Integer eu coloco Integer 
+    //tipo de dado da chave primaria da entidade CategoriaCurso é Integer
 
-    @Transactional
-    public CategoriaCurso salvar(CategoriaCurso categoriaCurso) {
-        return entityManager.merge(categoriaCurso);
-    }
 
-    public List<CategoriaCurso> obterTodos() {
-        return entityManager.createQuery("FROM CategoriaCurso",
-                CategoriaCurso.class).getResultList();
-    }
+
+    
+
 }

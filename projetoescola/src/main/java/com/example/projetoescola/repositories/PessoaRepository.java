@@ -16,11 +16,11 @@ public class PessoaRepository {
     EntityManager entityManager;
 
     @Transactional
-    public Pessoa salvar(Pessoa pessoa) {
+    public Pessoa save(Pessoa pessoa) {
         return entityManager.merge(pessoa);
     }
 
-    public List<Pessoa> obterTodos() {
+    public List<Pessoa> findAll() {
         return entityManager.createQuery("FROM Pessoa", Pessoa.class).getResultList();
     }
 }

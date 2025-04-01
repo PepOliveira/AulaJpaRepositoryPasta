@@ -2,28 +2,23 @@ package com.example.projetoescola.repositories;
 
 import java.util.List;
 
-import javax.swing.text.html.parser.Entity;
+import javax.management.Query;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Repository;
-
+import org.springframework.data.jpa.repository.JpaRepository;
 import com.example.projetoescola.models.Curso;
 
-import jakarta.persistence.EntityManager;
-import jakarta.transaction.Transactional;
 
-@Repository
-public class CursoRepository {
-    @Autowired
-    private EntityManager entityManager;
+public  interface CursoRepository extends JpaRepository<Curso, Long> {  
+    //interface é como se fosse um modelo para a criação da classe 
+    //criar o basico é isso
 
-    @Transactional
-    public Curso salvar(Curso curso) {
-        return entityManager.merge(curso);
-    }
+public List<Curso>findByNome(String nome);
+//permite que crie consultas personalizadas, ou seja, nessa vamos consultar o nome do curso 
+//A primeira parte — como find — é o introdutor e o restante — como ByNome — são os critérios 
+//basicamente -> select * from curso where nome = ?
 
-    public List<Curso> obterTodos() {
-        return entityManager
-                .createQuery("from Curso", Curso.class).getResultList();
-    }
+public List<Curso>findByNomeLike(String nome);
+//select * from curso where nome like ?
+//o like é para pesquisar por parte do nome
+    
 }
