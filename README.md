@@ -1,8 +1,5 @@
 # 📌 AS503TSN1 - Desenvolvimento Web Back-End
-Bem-vindo(a) ao repositório da disciplina AS503TSN1 - Desenvolvimento Web Back-End! Aqui você encontrará materiais, códigos-fonte e instruções para acompanhar o curso de desenvolvimento back-end com Java Spring Boot.
-
-## 📚 Ementa da Disciplina
-A disciplina abrange os fundamentos do desenvolvimento back-end com foco em Java Spring Boot, incluindo a criação de APIs RESTful, aplicação de padrões arquiteturais e design patterns. Os alunos aprenderão a projetar e otimizar APIs RESTFul conectadas a bancos de dados SQL ou NoSQL, implementar autenticação e segurança e realizar deploy em produção, capacitando-os a desenvolver aplicações robustas, escaláveis e prontas para produção
+desenvolvimento back-end com Java Spring Boot.
 
 ## 📌 Tópicos Principais:
 Introdução ao desenvolvimento web back-end
@@ -22,7 +19,6 @@ ORM: Hibernate (JPA)
 Ferramentas: Git/GitHub
 IDE: IntelliJ IDEA / VS Code
 
-## 🚀 Como Configurar o Projeto
 ### 🔽 1. Clonar o Repositório
 Para começar, abra um terminal e execute o comando:
 ```
@@ -58,11 +54,3 @@ git push origin main
 
 ✔️ Caso ocorra um conflito de merge, resolva manualmente e faça um novo commit antes de dar push.
 
-## 📬 Contato
-Caso tenha dúvidas, entre em contato com o professor.
-
-🔗 GitHub: github.com/rafaelmoreno29
-
-✉️ E-mail: rafael.moreno@facens.br
-
-**🚀 Bons estudos e bom código! 🚀**
